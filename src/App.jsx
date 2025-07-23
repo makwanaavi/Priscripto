@@ -2,9 +2,8 @@
 const App = () => {
   return (
     <div>
-        Welcome to Priscripto!  
+        Welcome to Priscripto!
     </div>
   )
 }
-
 export default App
