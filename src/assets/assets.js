@@ -174,7 +174,7 @@ export const doctors = [
         _id: 'doc7',
         name: 'Dr. Christopher Davis',
         image: doc7,
-        speciality: 'General physician',
+        speciality: 'Gastroenterologist',
         degree: 'MBBS',
         experience: '4 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -216,7 +216,7 @@ export const doctors = [
         _id: 'doc10',
         name: 'Dr. Jeffrey King',
         image: doc10,
-        speciality: 'Pediatricians',
+        speciality: 'Pediatrician',
         degree: 'MBBS',
         experience: '2 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -272,7 +272,7 @@ export const doctors = [
         _id: 'doc14',
         name: 'Dr. Ryan Martinez',
         image: doc14,
-        speciality: 'Gynecologist',
+        speciality: 'Pediatrician',
         degree: 'MBBS',
         experience: '3 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -296,4 +296,88 @@ export const doctors = [
             line2: 'Circle, Ring Road, London'
         }
     },
+    {
+        _id: 'doc16',
+        name: 'Dr. Henry Watson',
+        image: doc4,
+        speciality: 'General physician',
+        degree: 'MBBS',
+        experience: '6 Years',
+        about: 'Dr. Watson is known for his preventive care approach and quick diagnosis. He prioritizes patient education and transparent communication.',
+        fees: 45,
+        address: {
+            line1: '101 Baker Street',
+            line2: 'North London'
+        }
+    },
+    {
+        _id: 'doc17',
+        name: 'Dr. Olivia Turner',
+        image: doc6,
+        speciality: 'Gynecologist',
+        degree: 'MBBS, MD',
+        experience: '5 Years',
+        about: 'Dr. Turner specializes in women’s health and reproductive care with a gentle and understanding approach.',
+        fees: 55,
+        address: {
+            line1: '12 Queen’s Avenue',
+            line2: 'West London'
+        }
+    },
+    {
+        _id: 'doc18',
+        name: 'Dr. Aisha Khan',
+        image: doc14,
+        speciality: 'Dermatologist',
+        degree: 'MBBS, DDVL',
+        experience: '2 Years',
+        about: 'Dr. Khan focuses on skincare, acne treatments, and hair-related disorders with the latest dermatological solutions.',
+        fees: 35,
+        address: {
+            line1: '59 SkinCare Street',
+            line2: 'Central London'
+        }
+    },
+    {
+        _id: 'doc19',
+        name: 'Dr. Leo Fernandez',
+        image: doc9,
+        speciality: 'Pediatricians',
+        degree: 'MBBS, DCH',
+        experience: '7 Years',
+        about: 'Dr. Fernandez is passionate about child development and preventive pediatric medicine.',
+        fees: 40,
+        address: {
+            line1: '22 Kids Lane',
+            line2: 'East London'
+        }
+    },
+    {
+        _id: 'doc20',
+        name: 'Dr. Maya Desai',
+        image: doc3,
+        speciality: 'Neurologist',
+        degree: 'MBBS, MD, DM',
+        experience: '9 Years',
+        about: 'Dr. Desai has a deep interest in treating neurological conditions such as migraines, epilepsy, and Parkinson’s disease.',
+        fees: 70,
+        address: {
+            line1: '93 Brain Blvd',
+            line2: 'South London'
+        }
+    },
+    {
+        _id: 'doc21',
+        name: 'Dr. Liam Scott',
+        image: doc1,
+        speciality: 'Gastroenterologist',
+        degree: 'MBBS, MD, DM',
+        experience: '8 Years',
+        about: 'Dr. Scott is experienced in diagnosing and treating digestive system issues with precision and care.',
+        fees: 60,
+        address: {
+            line1: '45 Digestive Road',
+            line2: 'Northwest London'
+        }
+    }
 ]
