@@ -9,7 +9,7 @@ const Header = () => {
         <p className="text-3xl md:text-4xl lg:text-5xl text-white font-semibold leading-tight md:leading-tight lg:leading-tight">
           Book Appointment <br /> With Trusted Doctors
         </p>
-        <div className="flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light">
+        <div className="flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light mb-4">
           <img className="w-28" src={assets.group_profiles} alt="group img" />
           <p>
             Simply browse through our extensive list of trusted doctors,{" "}
@@ -19,7 +19,7 @@ const Header = () => {
         </div>
         <a
           href="Speciality"
-          className="flex w-[240px] h-[63px] items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300 "
+          className="  flex w-[240px] h-[63px] items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm sm:text-base m-auto md:m-0 hover:scale-105 transition-all duration-300 "
         >
           Book Appointment
           <img className="w-3" src={assets.arrow_icon} alt="" />
