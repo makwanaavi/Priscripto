@@ -16,7 +16,7 @@ const Navbar = () => {
         className="w-44 cursor-pointer"
         onClick={() => navigate("/")}
       />
-      <ul className="hidden md:flex items-start font-semibold gap-5">
+      <ul className="hidden md:flex items-start font-normal gap-5">
         <NavLink to="/">
           <li className="py-1 ">HOME</li>
           <hr className="border-none outline-none h-0.5 bg-primary w--3/5 m-auto hidden" />
