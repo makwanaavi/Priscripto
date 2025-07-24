@@ -17,8 +17,8 @@ const MyProfile = () => {
 
   const [isEdit, setIsEdit] = React.useState(true);
   return (
-    <div>
-      <img src={userData.image} alt="" />
+    <div className="max-w-lg flex flex-col gap-2 text-sm">
+      <img src={userData.image} alt="" className="w-36 rounded-lg" />
 
       {isEdit ? (
         <input
@@ -27,22 +27,28 @@ const MyProfile = () => {
             setUserData((prev) => ({ ...prev, name: e.target.value }))
           }
           value={userData.name}
+          className="bg-gray-200 text-3xl font-medium max-w-60 mt-4 p-2 rounded-sm"
         />
       ) : (
-        <p>{userData.name}</p>
+        <p className="font-medium text-3xl text-neutral-800 mt-4">
+          {userData.name}
+        </p>
       )}
-      <hr />
+      <hr className="bg-zinc-400 h-[1px border-none]" />
 
       <div>
-        <p>CONTACT INFORMATION</p>
+        <p className="text-neutral-500 underline mt-4 text-lg">
+          CONTACT INFORMATION
+        </p>
 
-        <div>
-          <p>EmailId : </p>
-          <p>{userData.email}</p>
+        <div className="grid grid-cols-[1fr_3fr] gap-y-2.5 mt-3 text-neutral-700 text-base">
+          <p className="font-medium">EmailId : </p>
+          <p className="text-primary">{userData.email}</p>
 
-          <p>Phone :</p>
+          <p className="font-medium">Phone :</p>
           {isEdit ? (
             <input
+              className="bg-gray-200 p-1 rounded-sm"
               type="text"
               onChange={(e) =>
                 setUserData((prev) => ({ ...prev, phone: e.target.value }))
@@ -50,14 +56,15 @@ const MyProfile = () => {
               value={userData.phone}
             />
           ) : (
-            <p>{userData.phone}</p>
+            <p className="text-primary">{userData.phone}</p>
           )}
 
-          <p>Address :</p>
+          <p className="font-medium">Address :</p>
           <p>
             {isEdit ? (
               <p>
                 <input
+                  className="bg-gray-200 p-1 rounded-sm"
                   type="text"
                   onChange={(e) =>
                     setUserData((prev) => ({
@@ -69,6 +76,7 @@ const MyProfile = () => {
                 />
                 <br />
                 <input
+                  className="bg-gray-200 p-1 rounded-sm"
                   type="text"
                   onChange={(e) =>
                     setUserData((prev) => ({
@@ -89,12 +97,15 @@ const MyProfile = () => {
         </div>
 
         <div>
-          <p>BASIC INFORMATION</p>
+          <p className="text-neutral-500 underline mt-4 text-lg">
+            BASIC INFORMATION
+          </p>
 
-          <div>
-            <p>Gender : </p>
+          <div className="grid grid-cols-[1fr_3fr] gap-y-2.5 mt-3 text-neutral-700 text-base">
+            <p className="font-medium">Gender : </p>
             {isEdit ? (
               <select
+                className="max-w-28 "
                 onChange={(e) =>
                   setUserData((prev) => ({ ...prev, gender: e.target.value }))
                 }
@@ -109,9 +120,9 @@ const MyProfile = () => {
             )}
 
             <p>Date of Birth : </p>
-           {
-            isEdit ? (
+            {isEdit ? (
               <input
+                className="max-w-28 bg-gray-200 p-1 rounded-sm"
                 type="date"
                 onChange={(e) =>
                   setUserData((prev) => ({ ...prev, dob: e.target.value }))
@@ -124,22 +135,39 @@ const MyProfile = () => {
           </div>
         </div>
 
-        <div>
-         {
-          isEdit ? (
-            <button
+        <div className="mt-10">
+          {isEdit ? (
+           <div className="flex gap-4">
+             <button
               onClick={() => setIsEdit(false)}
-              className="bg-primary text-white rounded-md p-2 mt-4"
-            >
-              Save Changes
-            </button>
-          ) : (
-            <button
-              onClick={() => setIsEdit(true)}
-              className="bg-primary text-white rounded-md p-2 mt-4"
+              className="border px-7 py-3 rounded-full hover:bg-primary/60 cursor-no-drop hover:text-white transition-colors duration-300"
             >
               Edit Profile
             </button>
+
+             <button
+              onClick={() => setIsEdit(false)}
+              className="border border-primary px-7 py-3 rounded-full hover:bg-primary hover:text-white transition-colors duration-300"
+            >
+              Save Information
+            </button>
+           </div>
+          ) : (
+            <div className="flex gap-4">
+            <button
+              onClick={() => setIsEdit(true)}
+              className="border border-primary px-7 py-3 rounded-full hover:bg-primary hover:text-white transition-colors duration-300"
+            >
+              Edit Profile
+            </button>
+
+              <button
+              onClick={() => setIsEdit(false)}
+              className="border px-7 py-3 rounded-full hover:bg-primary/60 cursor-no-drop hover:text-white transition-colors duration-300"
+            >
+              Save Information
+            </button>
+            </div>
           )}
         </div>
       </div>
