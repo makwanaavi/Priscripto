@@ -367,6 +367,48 @@ export const doctors = [
         }
     },
     {
+        _id: 'doc20',
+        name: 'Dr. Maya Desai',
+        image: doc3,
+        speciality: 'Neurologist',
+        degree: 'MBBS, MD, DM',
+        experience: '9 Years',
+        about: 'Dr. Desai has a deep interest in treating neurological conditions such as migraines, epilepsy, and Parkinson’s disease.',
+        fees: 70,
+        address: {
+            line1: '93 Brain Blvd',
+            line2: 'South London'
+        }
+    },
+    {
+        _id: 'doc20',
+        name: 'Dr. Maya Desai',
+        image: doc3,
+        speciality: 'Neurologist',
+        degree: 'MBBS, MD, DM',
+        experience: '9 Years',
+        about: 'Dr. Desai has a deep interest in treating neurological conditions such as migraines, epilepsy, and Parkinson’s disease.',
+        fees: 70,
+        address: {
+            line1: '93 Brain Blvd',
+            line2: 'South London'
+        }
+    },
+    {
+        _id: 'doc20',
+        name: 'Dr. Maya Desai',
+        image: doc3,
+        speciality: 'Neurologist',
+        degree: 'MBBS, MD, DM',
+        experience: '9 Years',
+        about: 'Dr. Desai has a deep interest in treating neurological conditions such as migraines, epilepsy, and Parkinson’s disease.',
+        fees: 70,
+        address: {
+            line1: '93 Brain Blvd',
+            line2: 'South London'
+        }
+    },
+    {
         _id: 'doc21',
         name: 'Dr. Liam Scott',
         image: doc1,
